@@ -1,0 +1,79 @@
+footer {
+    background-color: wheat;
+    color: black;
+    padding: 20px 0;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.fb-page {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bottom-footer {
+    background-color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: var(--text-normal);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* ปุ่มเลื่อนขึ้นบนสุด */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blanchedalmond;
+    color: blueviolet;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.scroll-top:hover {
+    background-color: burlywood;
+}

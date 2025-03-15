@@ -1,0 +1,59 @@
+/* ปรับ Header */
+.bottom-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: var(--text-normal);
+    z-index: 1001;
+    /* ให้ Header อยู่ข้างหน้า */
+}
+
+/* Navbar คงที่ใต้ Header */
+nav {
+    position: fixed;
+    top: 40px;
+    /* คงที่ใต้ Header */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3000;
+    /* ให้ Navbar อยู่เหนือแบนเนอร์ */
+    box-shadow: 3px 8px 9px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับแบนเนอร์ให้ลงมามากขึ้น */
+.banner-container {
+    margin-top: 300px;
+    /* จากเดิม 200px เป็น 230px */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ปรับให้เนื้อหาเริ่มหลังแบนเนอร์ */
+.main-container {
+    position: relative;
+    top: 200px;
+    /* ลดลงจาก 120px เป็น 140px */
+    width: 100%;
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ทำให้ Sidebar, Content และ Extra Info เลื่อนแยกกัน */
+.sidebar,
+.content,
+.extra-info {
+    overflow-y: auto;
+    max-height: calc(100vh - 140px);
+}

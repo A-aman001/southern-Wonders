@@ -1,0 +1,12 @@
+/* Extra Info (ขวา) */
+.extra-info {
+    width: 30%;
+    background: #f3f0f0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.extra-info iframe {
+    width: 100%;
+    border: none;
+}

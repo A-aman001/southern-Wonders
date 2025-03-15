@@ -1,0 +1,6 @@
+.bottom-header {
+    background-color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: var(--text-normal);
+}
