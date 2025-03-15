@@ -1,8 +1,8 @@
 # 🏫 Muslim Pattanasart School Website
-โปรเจครายวิชา *Requirement และ Frontend Development* ของกลุ่ม Noname!<br>
+โปรเจครายวิชา * Data Structure <br>
 สาขา *วิศวกรรมซอฟต์แวร์ มหาวิทยาลัยพะเยา* ปีการศึกษา 2567
 
-The project for the *Requirement and Frontend Development* course by the Noname! Group,<br>
+The project for the * Data Structure,<br>
 Software Engineering Department, University of Phayao, Academic Year 2024.
 
 ---
