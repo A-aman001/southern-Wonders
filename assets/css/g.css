@@ -1,0 +1,39 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    background: url('banner.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.news {
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.news h2 {
+    text-align: center;
+}
+
+.news-item {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}

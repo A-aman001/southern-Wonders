@@ -7,146 +7,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Logo -->
-    <link rel="icon" href="/img/University-of-Phayao-logo.png" type="image/icon type" sizes="16x16">
+    <link rel="icon" href="/img/logo.jpg" type="image/png" sizes="16x16">
 
     <!-- Title -->
-    <title>UP-News</title>
+    <title>Muslim Pattanasart School</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/globals.css">
-    
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/header-nav.css">
+    <link rel="stylesheet" href="../../assets/css/banner.css">
+    <link rel="stylesheet" href="../../assets/css/content.css">
+    <link rel="stylesheet" href="../../assets/css/extra-info.css">
+    <link rel="stylesheet" href="../../assets/css/sidebar.css">
     <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/g.css">
+
+    <!--JavaScript -->
+    <script defer src="/js/scrollto_top.js"></script>
+    <script defer src="/js/filterNews.js"></script>
+    <script defer src="/js/moveSlide.js"></script>
 
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="bottom-header">
+        <p> @ Muslim Pattanasart School &nbsp; | &nbsp;المعهد الاسلامي النموجي </p>
+    </header>
 
-    <!-- Sidebar -->
-    <section class="sidebar">
-        <h4>ข่าวตามยุทธศาสตร์ มหาวิทยาลัยพะเยา</h4>
-        <ul>
-            <li><a href="/index.html">รวมข่าวทั้งหมด</a></li>
-            <li><a href="/news/news-1.html">ด้านผลิตบัณฑิต</a></li>
-            <li><a href="/news/news-2.html">ด้านวิจัย</a></li>
-            <li><a href="/news/news-3.html">ด้านบริการวิชาการ</a></li>
-            <li><a href="/news/news-4.html">ด้านทำนุบำรุงศิลปวัฒนธรรม</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav>
+        <section class="logo-container">
+            <img src="../../img/logo.jpg" alt="BuddyNest Logo" class="logo" onclick="goHome()">
+            <div class="school-name">โรงเรียนมุสลิมพัฒนศาสตร์</div>
+        </section>
+
+        <article class="auth-buttons">
+            <a href="../../index.html">หน้าหลัก</a>
+            <section class="dropdown">
+                <a href="#">ข้อมูลทั่วไป</a>
+                <div class="dropdown-menu">
+                    <a href="#">ประวัติโรงเรียน</a>
+                    <a href="#">อักษรย่อ/ตราประจำโรงเรียน</a>
+                    <a href="#">วิสัยทัศน์</a>
+                    <a href="#">พันธกิจ</a>
+                    <a href="#">อัตลักษณ์/เอกลักษณ์</a>
+                    <a href="#">ที่ตั้ง/แผนผังของโรงเรียน</a>
+                    <a href="#">โครงสร้างการบริหาร</a>
+                </div>
+            </section>
+
+            <section class="dropdown">
+                <a href="#">บุคลากร</a>
+                <div class="dropdown-menu">
+                    <a href="#">กลุ่มบริหาร</a>
+                    <a href="#">กลุ่มสาระการเรียนรู้ภาษาไทย</a>
+                    <a href="#">กลุ่มสาระการเรียนรู้คณิตศาสตร์</a>
+                    <a href="#">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</a>
+                    <a href="#">กล่มุสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</a>
+                    <a href="#">กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ</a>
+                    <a href="#">แนะแนว</a>
+                    <a href="#">ปกครอง</a>
+                    <a href="#">ครูประจำชั้้น</a>
+                </div>
+            </section>
+
+            <section class="dropdown">
+                <a href="#">E-SERVICE</a>
+                <div class="dropdown-menu">
+                    <a href="#">ตรวจสอบผลการเรียน</a>
+                    <a href="#">การเรียนการสอนออนไลน์</a>
+                </div>
+            </section>
+
+            <section class="dropdown">
+                <a href="#">กิจกรรมนักเรียน</a>
+                <div class="dropdown-menu">
+                    <a href="#">#</a>
+                    <a href="#">#</a>
+                </div>
+            </section>
+
+            <a href="#">ข่าวประชาสัมพันธ์</a>
+            <a href="#">ติดต่อโรงเรียน</a>
+
+        </article>
+    </nav>
+    <br><br>
+    <section class="news">
+        <h2>ข่าวประชาสัมพันธ์</h2>
+        <div class="news-item">
+            <h3>ประกาศผลการเรียน 2/2567</h3>
+            <p>สามารถตรวจสอบผลการเรียนได้ที่เว็บไซต์ของโรงเรียน</p>
+            <a href="#">อ่านเพิ่มเติม</a>
+        </div>
+        <div class="news-item">
+            <h3>กิจกรรม 120 ปี โรงเรียนพัทลุง</h3>
+            <p>ร่วมเฉลิมฉลองครบรอบ 120 ปีแห่งความภาคภูมิใจ</p>
+            <a href="#">อ่านเพิ่มเติม</a>
+        </div>
     </section>
-    <!-- Content -->
-    <article class="content" id="news-content">
-        <section class="news-item">เลือกหมวดหมู่เพื่อดูข่าวสาร<br><br>
-            <input class="dxeEditArea_MaterialCompact dxeEditAreaSys dxh0"
-                id="ContentPlaceHolder1_ContentPlaceHolder1_ASPxGridView1_DXSE_I"
-                name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ASPxGridView1$DXSE"
-                onfocus="ASPx.EGotFocus('ContentPlaceHolder1_ContentPlaceHolder1_ASPxGridView1_DXSE')"
-                onblur="ASPx.ELostFocus('ContentPlaceHolder1_ContentPlaceHolder1_ASPxGridView1_DXSE')"
-                onchange="ASPx.EValueChanged('ContentPlaceHolder1_ContentPlaceHolder1_ASPxGridView1_DXSE')"
-                value="Enter text to search..." type="text" savedspellcheck="[object Object]" spellcheck="false"
-                autocomplete="off">
-            <br>
 
-            <table>
-                <tr>
-                    <th>ภาพข่าว</th>
-                    <th>หัวข้อข่าว</th>
-                </tr>
-                <tr>
-                    <td><img src="/img/1.jpg" alt="News" width="100"></td>
-                    <td><a href="../news/up-news.html">ศูนย์ทดสอบมาตรฐานฝีมือแรงงาน ม.พะเยา
-                            จัดการทดสอบมาตรฐานฝีมือแรงงานแห่งชาติ สาขาช่างเทคนิคเครื่องกัดอัตโนมัติ ระดับ 1 รุ่นที่ 1
-                            และ 2</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">บัณฑิตคณะสหเวชศาสตร์ ดำเนินการฝึกซ้อม เพื่อเข้ารับพระราชทานปริญญาบัตร
-                            ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/3.jpg" alt="News" width="100"></td>
-                    <td><a href="#">คณะศิลปศาสตร์เข้าร่วมการประกวดสุนทรพจน์ภาษาญี่ปุ่น ระดับอุดมศึกษาในเขตภาคเหนือ
-                            ครั้งที่ 18</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/4.png" alt="News" width="100"></td>
-                    <td><a href="#">ม.พะเยา กับหลักสูตรพัฒนาทักษะนักจัดการเมืองแห่งการเรียนรู้ จังหวัดฉะเชิงเทรา</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/img/2.png" alt="News" width="100"></td>
-                    <td><a href="#">วิทยาลัยการศึกษา มหาวิทยาลัยพะเยา แสดงความยินดีกับดุษฎีบัณฑิต มหาบัณฑิต และบัณฑิต
-                            ในพิธีพระราชทานปริญญาบัตร มหาวิทยาลัยพะเยา ประจำปีการศึกษา 2566</a></td>
-                </tr>
-            </table>
+    <br><br>
 
+    <footer>
+        <article class="footer-container">
 
-        </section>
+            <!-- About -->
+            <section class="footer-section">
+                <h3>เมนูหลัก</h3>
+                <p><a href="#">หน้าหลัก</a></p>
+                <p><a href="#">ข้อมูลทั่วไป</a></p>
+                <p><a href="#">บุคลากร</a></p>
+                <p><a href="#">E-SERVICE</a></p>
+                <p><a href="#">กิจกรรมนักเรียน</a></p>
+                <p><a href="#">ข่าวประชาสัมพันธ์</a></p>
+            </section>
 
-        <br>
-        <!-- Footer -->
-        <section class="page">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
+            <!-- Follow us-->
+            <section class="footer-section">
+                <h3>ติดตามเราได้ที่</h3>
+                <div class="fb-page">
+                    <iframe src="https://web.facebook.com/profile.php?id=100064592836397" width="340" height="130"
+                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true">
+                    </iframe>
+                </div>
+            </section>
 
-        </section>
-    </article>
+            <!-- Contact -->
+            <section class="footer-section">
+                <h3>ติดต่อเรา</h3>
+                <p>100/1 ม.3 ต.บางปู อ.ยะหริ่ง จ.ปัตตานี 94150</p>
+                <p>โทรศัพท์: 0-2949-4278, 0-2949-4312-3</p>
+                <p>โทรสาร: 0-2949-4220</p>
+                <p>เว็บไซต์: <a href="https://www.namuzaji.com">www.namuzaji.com</a></p>
+                <p>Email: mpsbangpoo@hotmail.com</p>
+            </section>
+
+        </article>
+        <footer class="bottom-footer">
+            <p>© 2025 Muslim Pattanasart School. All Rights Reserved.</p>
+        </footer>
+
+        <!-- ปุ่มเลื่อนขึ้นบนสุด -->
+        <button class="scroll-top" onclick="scrollToTop()">↑</button>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("เว็บไซต์โหลดเรียบร้อย!");
+        });
+    </script>
 
 </body>
 

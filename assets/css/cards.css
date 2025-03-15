@@ -17,16 +17,16 @@
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 180px;
+    width: 160px;
     max-width: 200px;
     text-align: center;
     /* จัดข้อความตรงกลาง */
 }
 
 .card img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    max-height: 100px;
+    max-height: 800px;
     /* จำกัดความสูงของภาพ */
     object-fit: cover;
     border-radius: 5px;
