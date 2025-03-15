@@ -197,55 +197,37 @@
         </section>
     </nav>
 
-    <!-- Container หลัก -->
-    <div class="container">
-
-        <!-- Sidebar (ซ้าย) -->
+    <article class="container">
+        <!-- Sidebar (ย้ายมาอยู่ด้านบน) -->
         <aside class="sidebar">
-            <h2>เมนูหลัก</h2>
+            <h3>เมนูหลัก</h3>
             <ul>
                 <li><a href="#">หน้าหลัก</a></li>
                 <li><a href="#">ข้อมูลทั่วไป</a></li>
                 <li><a href="#">บุคลากร</a></li>
                 <li><a href="#">E-SERVICE</a></li>
-                <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
-                <li><a href="#">ติดต่อโรงเรียน</a></li>
             </ul>
         </aside>
 
-        <!-- เนื้อหาหลัก (กลาง) -->
+        <!-- เนื้อหาหลัก -->
         <main class="content">
             <h1>ข่าวสารและกิจกรรม</h1>
-            <input type="text" id="search" placeholder="ค้นหาข่าว..." onkeyup="filterNews()">
-
-            <table id="newsTable">
-                <tr>
-                    <th>ภาพข่าว</th>
-                    <th>หัวข้อข่าว</th>
-                </tr>
-                <tr>
-                    <td><img src="img/1.jpg" alt="ข่าว 1"></td>
-                    <td><a href="#">ศูนย์ทดสอบมาตรฐานฝีมือแรงงาน</a></td>
-                </tr>
-                <tr>
-                    <td><img src="img/2.jpg" alt="ข่าว 2"></td>
-                    <td><a href="#">พิธีพระราชทานปริญญาบัตร</a></td>
-                </tr>
-            </table>
+            <input type="text" id="search" placeholder="ค้นหากิจกรรม..." onkeyup="filterNews()">
+            <div class="news-container">
+                <img src="/img/2.jpg" alt="News">
+                <h4>ศูนย์ทดสอบมาตรฐานฝีมือแรงงาน...</h4>
+            </div>
         </main>
 
-        <!-- รายละเอียดเพิ่มเติม (ขวา) -->
+        <!-- รายละเอียดเพิ่มเติม -->
         <aside class="extra-info">
-            <h2>ติดต่อเรา</h2>
-            <p>ที่อยู่: 100/1 ม.3 ต.บางปู อ.ยะหริ่ง จ.ปัตตานี</p>
-            <p>โทร: 0-2949-4278</p>
-            <p>Email: mpsbangpoo@hotmail.com</p>
-            <h3>ติดตามเรา</h3>
-            <iframe src="https://web.facebook.com/profile.php?id=100064592836397" width="100%" height="150"></iframe>
+            <h3>ผู้บริหาร</h3>
+            <div class="card">
+                <img src="/img/1.png" alt="Director">
+                <p>นายกอเซม มะแซ - ผู้อำนวยการ</p>
+            </div>
         </aside>
-
-    </div>
-
+    </article>
     <br>
 
     <footer>
