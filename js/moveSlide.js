@@ -9,4 +9,4 @@ function moveSlide(step) {
     slides.style.transform = `translateX(${-index * 100}%)`;
 }
 
-setInterval(() => moveSlide(1), 60000); // เลื่อนอัตโนมัติทุก 3 วินาที
+setInterval(() => moveSlide(1), 60000); 

@@ -1,53 +1,44 @@
 .cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* ปรับช่องว่างระหว่างการ์ด */
+    /* ลดช่องว่างระหว่างการ์ด */
     padding: 20px;
-    text-align: center;
-    /* จัดให้ตัวอักษรอยู่ตรงกลาง */
+    justify-content: center;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #f2f2f2;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 160px;
-    max-width: 200px;
     text-align: center;
-    /* จัดข้อความตรงกลาง */
+    width: 380px;
+    /* ลดขนาดเพื่อให้ใกล้กันขึ้น */
+    margin: auto;
+    /* ลด margin เพื่อให้การ์ดชิดกันมากขึ้น */
 }
 
 .card img {
-    width: 80%;
-    height: auto;
-    max-height: 800px;
-    /* จำกัดความสูงของภาพ */
-    object-fit: cover;
+    width: 100%;
     border-radius: 5px;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+    display: block;
 }
 
 .card p {
     margin-top: 10px;
-    font-size: 1rem;
     font-weight: bold;
-    text-align: center;
 }
 
-/* ปรับให้แสดงเต็มความกว้างของหน้าจอเล็ก */
+/* ทำให้แสดงเป็นคอลัมน์เดียวบนหน้าจอเล็ก */
 @media (max-width: 600px) {
     .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-        max-width: 250px;
+        grid-template-columns: 1fr;
+        /* แสดง 1 คอลัมน์ */
     }
 }

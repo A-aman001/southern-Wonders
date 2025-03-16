@@ -1,0 +1,103 @@
+select,
+button,
+input {
+    background-color: #ffe8b2;
+    margin: 15px;
+    padding: 15px 20px;
+    /* ปรับ padding ให้ชัดเจน */
+    font-size: 16px;
+    /* กำหนดขนาดฟอนต์ให้แน่นอน */
+    font-family: 'Arial', sans-serif;
+    /* ใช้ฟอนต์ที่มีในทุก OS */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    /* ป้องกันสไตล์เริ่มต้นของระบบ */
+    outline: none;
+    /* ป้องกันเส้นขอบที่แตกต่างกัน */
+    box-sizing: border-box;
+    /* ทำให้ขนาดรวม padding และ border */
+    width: auto;
+    /* ป้องกันการขยายตัวที่แตกต่างกัน */
+}
+
+.search-section {
+    background-color: white;
+    border-top: 0px solid #D9FBFC;
+    border-bottom: 0px solid #D9FBFC;
+    padding: 1rem 0;
+
+    .search-container {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h4 {
+        color: #5a5a5a;
+        font-weight: bold;
+    }
+
+    .search-category {
+        .service-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 1rem 0;
+
+            button {
+                padding: 15px 20px;
+                border: none;
+                background-color: #ffe8b2;
+                border-radius: 5px;
+                cursor: pointer;
+                appearance: none;
+                /* ป้องกันสไตล์เริ่มต้นของระบบ */
+                outline: none;
+                /* ป้องกันเส้นขอบที่แตกต่างกัน */
+            }
+        }
+    }
+
+    .search-area {
+        .search-area-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+        }
+
+        select {
+            margin: 15px;
+            padding: 15px;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+            appearance: none;
+            /* ป้องกันสไตล์เริ่มต้นของระบบ */
+            outline: none;
+            /* ป้องกันเส้นขอบที่แตกต่างกัน */
+
+        }
+
+        .results {
+            display: none;
+        }
+    }
+}
+
+select,
+button,
+input {
+    background-color: whitesmoke;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    /* ป้องกันสไตล์เริ่มต้นของระบบ */
+    outline: none;
+    /* ป้องกันเส้นขอบที่แตกต่างกัน */
+}

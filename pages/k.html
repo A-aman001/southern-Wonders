@@ -1,278 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Container หลัก -->
+<article class="container">
 
-<head>
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sidebar (ซ้าย) -->
+    <aside class="sidebar">
+        <div class="box">
 
-    <!-- Logo -->
-    <link rel="icon" href="/img/logo.jpg" type="image/png" sizes="16x16">
-
-    <!-- Title -->
-    <title>Muslim Pattanasart School</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../../assets/css/globals.css">
-    <link rel="stylesheet" href="../../assets/css/navbar.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/content.css">
-    <link rel="stylesheet" href="/assets/css/extra-info.css">
-    <link rel="stylesheet" href="/assets/css/sidebar.css">
-    <link rel="stylesheet" href="../../assets/css/footer.css">
-
-
-    <!--JavaScript -->
-    <script defer src="/js/scrollto_top.js"></script>
-    <script defer src="/js/filterNews.js"></script>
-
-    <style>
-        /* Header คงที่ด้านบน */
-        .bottom-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: wheat;
-            text-align: center;
-            padding: 10px 0;
-            font-size: var(--text-normal);
-            z-index: 1000;
-        }
-
-        /* Navbar คงที่ใต้ Header */
-        nav {
-            position: fixed;
-            top: 50px;
-            /* ปรับตามความสูงของ Header */
-            left: 0;
-            width: 100%;
-            background-color: white;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 999;
-        }
-
-        /* กล่องที่รวมโลโก้และชื่อโรงเรียน */
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* โลโก้ */
-        .logo {
-            width: 6rem;
-            cursor: pointer;
-        }
-
-        /* ชื่อโรงเรียน */
-        .school-name {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: black;
-        }
-
-        /* เมนูหลัก */
-        .auth-buttons {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .auth-buttons a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        /* เมนูย่อย */
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background-color: whitesmoke;
-            top: 100%;
-            left: 0;
-            width: 200px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .dropdown-menu a {
-            display: block;
-            padding: 10px;
-            color: black;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: wheat;
-        }
-
-        /* แสดงเมนูย่อยเมื่อโฮเวอร์ */
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        /* ปรับให้ Container หลักเริ่มหลัง Header และ Navbar */
-        .container {
-            margin-top: 120px;
-            /* ป้องกันเนื้อหาถูก Header + Navbar บัง */
-            padding: 20px;
-        }
-
-        /* ทำให้ Sidebar, Content และ Extra Info เลื่อนแยกกัน */
-        .sidebar,
-        .content,
-        .extra-info {
-            overflow-y: auto;
-            max-height: calc(100vh - 120px);
-        }
-    </style>
-
-</head>
-
-<body>
-    <!-- Header -->
-    <header class="bottom-header">
-        <p> @ Muslim Pattanasart School &nbsp; | &nbsp;المعهد الاسلامي النموجي </p>
-    </header>
-
-    <!-- Navbar -->
-    <nav>
-        <section class="logo-container">
-            <img src="/img/logo.jpg" alt="BuddyNest Logo" class="logo" onclick="goHome()">
-            <div class="school-name">โรงเรียนมุสลิมพัฒนศาสตร์</div>
-        </section>
-
-        <section class="auth-buttons">
-            <a href="../../index.html">หน้าหลัก</a>
-            <div class="dropdown">
-                <a href="#">ข้อมูลทั่วไป</a>
-                <div class="dropdown-menu">
-                    <a href="#">ประวัติโรงเรียน</a>
-                    <a href="#">อักษรย่อ/ตราประจำโรงเรียน</a>
-                    <a href="#">วิสัยทัศน์</a>
-                    <a href="#">พันธกิจ</a>
-                    <a href="#">อัตลักษณ์/เอกลักษณ์</a>
-                    <a href="#">ที่ตั้ง/แผนผังของโรงเรียน</a>
-                    <a href="#">โครงสร้างการบริหาร</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">บุคลากร</a>
-                <div class="dropdown-menu">
-                    <a href="#">กลุ่มบริหาร</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้ภาษาไทย</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้คณิตศาสตร์</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</a>
-                    <a href="#">กล่มุสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ</a>
-                    <a href="#">แนะแนว</a>
-                    <a href="#">ปกครอง</a>
-                    <a href="#">ครูประจำชั้้น</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">E-SERVICE</a>
-                <div class="dropdown-menu">
-                    <a href="#">ตรวจสอบผลการเรียน</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้ภาษาไทย</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">กิจกรรมนักเรียน</a>
-                <div class="dropdown-menu">
-                    <a href="#">#</a>
-                    <a href="#">#</a>
-                </div>
-            </div>
-            <a href="#">ข่าวประชาสัมพันธ์</a>
-            <a href="#">ติดต่อโรงเรียน</a>
-        </section>
-    </nav>
-
-    <article class="container">
-        <!-- Sidebar (ย้ายมาอยู่ด้านบน) -->
-        <aside class="sidebar">
-            <h3>เมนูหลัก</h3>
+            <h3>ข้อมูลทั่วไป</h3>
             <ul>
                 <li><a href="#">หน้าหลัก</a></li>
-                <li><a href="#">ข้อมูลทั่วไป</a></li>
-                <li><a href="#">บุคลากร</a></li>
-                <li><a href="#">E-SERVICE</a></li>
+                <li><a href="#">ประวัติโรงเรียน</a></li>
+                <li><a href="#">อักษรย่อ/ตราประจำโรงเรียน</a></li>
+                <li><a href="#">วิสัยทัศน์</a></li>
+                <li><a href="#">พันธกิจ</a></li>
+                <li><a href="#">อัตลักษณ์/เอกลักษณ์</a></li>
+                <li><a href="#">ที่ตั้ง/แผนผังของโรงเรียน</a></li>
+                <li><a href="#">โครงสร้างการบริหาร</a></li>
             </ul>
-        </aside>
+        </div>
 
-        <!-- เนื้อหาหลัก -->
-        <main class="content">
-            <h1>ข่าวสารและกิจกรรม</h1>
-            <input type="text" id="search" placeholder="ค้นหากิจกรรม..." onkeyup="filterNews()">
-            <div class="news-container">
-                <img src="/img/2.jpg" alt="News">
-                <h4>ศูนย์ทดสอบมาตรฐานฝีมือแรงงาน...</h4>
-            </div>
-        </main>
 
-        <!-- รายละเอียดเพิ่มเติม -->
-        <aside class="extra-info">
-            <h3>ผู้บริหาร</h3>
-            <div class="card">
-                <img src="/img/1.png" alt="Director">
-                <p>นายกอเซม มะแซ - ผู้อำนวยการ</p>
-            </div>
-        </aside>
-    </article>
-    <br>
+        <h3>บุคลากร</h3>
+        <ul>
+            <li><a href="#">หน้าหลัก</a></li>
+            <li><a href="#">กลุ่มบริหาร</a></li>
+            <li><a href="#">กลุ่มสาระการเรียนรู้ภาษาไทย</a></li>
+            <li><a href="#">กลุ่มสาระการเรียนรู้คณิตศาสตร์</a></li>
+            <li><a href="#">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</a></li>
+            <li><a href="#">กล่มุสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</a></li>
+            <li><a href="#">กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ</a></li>
+            <li><a href="#">ครูแนะแนว</a></li>
+            <li><a href="#">ฝ่ายดูแลนักเรียน/ปกครอง</a></li>
+            <li><a href="#">ครูประจำชั้้น</a></li>
+        </ul>
 
-    <footer>
-        <article class="footer-container">
+        <h2>เมนูหลัก</h2>
+        <ul>
 
-            <!-- About -->
-            <section class="footer-section">
-                <h3>เมนูหลัก</h3>
-                <p><a href="#">หน้าหลัก</a></p>
-                <p><a href="#">ข้อมูลทั่วไป</a></p>
-                <p><a href="#">บุคลากร</a></p>
-                <p><a href="#">E-SERVICE</a></p>
-                <p><a href="#">กิจกรรมนักเรียน</a></p>
-                <p><a href="#">ข่าวประชาสัมพันธ์</a></p>
-            </section>
+            <li><a href="#">บุคลากร</a></li>
+            <li><a href="#">E-SERVICE</a></li>
+            <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
+            <li><a href="#">ติดต่อโรงเรียน</a></li>
+        </ul>
+    </aside>
 
-            <!-- Follow us-->
-            <section class="footer-section">
-                <h3>ติดตามเราได้ที่</h3>
-                <div class="fb-page">
-                    <iframe src="https://web.facebook.com/profile.php?id=100064592836397" width="340" height="130"
-                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true">
-                    </iframe>
+
+
+    <!-- เนื้อหาหลัก (กลาง) -->
+    <main class="content">
+        <h1>ข่าวสารและกิจกรรม</h1>
+        <input type="text" id="search" placeholder="ค้นหากิจกรรม..." onkeyup="filterNews()">
+        <div class="news-container">
+            <h4>ศูนย์ทดสอบมาตรฐานฝีมือแรงงาน ม.พะเยา จัดการทดสอบมาตรฐานฝีมือแรงงานแห่งชาติ
+                สาขาช่างเทคนิคเครื่องกัดอัตโนมัติ ระดับ 1 รุ่นที่ 1 และ 2</h4>
+            <img src="/img/2.jpg" alt="News" width="650">
+        </div>
+
+        <table id="newsTable">
+            <tr>
+                <th>ภาพข่าว</th>
+                <th>หัวข้อข่าว</th>
+            </tr>
+            <tr>
+                <td><img src="img/1.jpg" alt="ข่าว 1"></td>
+                <td><a href="#">ศูนย์ทดสอบมาตรฐานฝีมือแรงงาน</a></td>
+            </tr>
+            <tr>
+                <td><img src="img/2.jpg" alt="ข่าว 2"></td>
+                <td><a href="#">พิธีพระราชทานปริญญาบัตร</a></td>
+            </tr>
+        </table>
+    </main>
+
+    <!-- รายละเอียดเพิ่มเติม (ขวา) -->
+    <aside class="extra-info">
+
+        <article class="box">
+            <h4>ผู้บริหาร</h4> <br>
+            <section class="cards">
+                <div class="card">
+                    <img src="/img/1.png" alt="Licensee">
+                    <p>นายฮาริส มะแซ</p>
+                    <p>ผู้รับใบอนุญาติ</p>
                 </div>
-            </section>
 
-            <!-- Contact -->
-            <section class="footer-section">
-                <h3>ติดต่อเรา</h3>
-                <p>100/1 ม.3 ต.บางปู อ.ยะหริ่ง จ.ปัตตานี 94150</p>
-                <p>โทรศัพท์: 0-2949-4278, 0-2949-4312-3</p>
-                <p>โทรสาร: 0-2949-4220</p>
-                <p>เว็บไซต์: <a href="https://www.namuzaji.com">www.namuzaji.com</a></p>
-                <p>Email: mpsbangpoo@hotmail.com</p>
-            </section>
+                <br>
+                <div class="card">
+                    <img src="/img/1.png" alt="Director">
+                    <p>นายกอเซม มะแซ</p>
+                    <p>ผู้อำนวยการโรงเรียน</p>
+                </div>
 
+            </section>
         </article>
-        <footer class="bottom-footer">
-            <p>© 2025 Buddy Nest. All Rights Reserved.</p>
-        </footer>
+    </aside>
 
-        <!-- ปุ่มเลื่อนขึ้นบนสุด -->
-        <button class="scroll-top" onclick="scrollToTop()">↑</button>
-    </footer>
+</article>
 
-</body>
-
-</html>
+<br><br>

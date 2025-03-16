@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Logo -->
-    <link rel="icon" href="/img/logo.jpg" type="image/png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../img/logo.png" sizes="16x16">
 
     <!-- Title -->
-    <title>Muslim Pattanasart School</title>
+    <title>Southern Wonders</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/globals.css">
@@ -22,25 +22,28 @@
     <link rel="stylesheet" href="/assets/css/extra-info.css">
     <link rel="stylesheet" href="/assets/css/sidebar.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/search.css">
+    <link rel="stylesheet" href="/assets/css/cards.css">
 
     <!--JavaScript -->
     <script defer src="/js/scrollto_top.js"></script>
     <script defer src="/js/filterNews.js"></script>
     <script defer src="/js/moveSlide.js"></script>
-
+    <script defer src="/js/cards.js"></script>
+    
 </head>
 
 <body>
     <!-- Header -->
     <header class="bottom-header">
-        <p> @ Muslim Pattanasart School &nbsp; | &nbsp;المعهد الاسلامي النموجي </p>
+        <p> @&nbsp; &nbsp;Pattani&nbsp; &nbsp;Yala&nbsp; &nbsp;Narathiwat</p>
     </header>
 
     <!-- Navbar -->
     <nav>
         <section class="logo-container">
-            <img src="/img/logo.jpg" alt="BuddyNest Logo" class="logo" onclick="goHome()">
-            <div class="school-name">โรงเรียนมุสลิมพัฒนศาสตร์</div>
+            <img src="/img/logo.png" alt="wanderWild Logo" class="logo" onclick="goHome()">
+            <div class="school-name">Southern Wonders</div>
         </section>
 
         <article class="auth-buttons">
@@ -101,113 +104,86 @@
             <img src="/img/Banner1.png" alt="Banner 1">
             <img src="/img/Banner2.png" alt="Banner 2">
             <img src="/img/Banner3.png" alt="Banner 3">
-            <img src="/img/Banner1.png" alt="Banner 4">
-            <img src="/img/Banner2.png" alt="Banner 5">
-            <img src="/img/Banner3.png" alt="Banner 6">
+            <img src="/img/Banner4.png" alt="Banner 4">
+            <img src="/img/Banner5.png" alt="Banner 5">
+            <img src="/img/Banner6.png" alt="Banner 6">
         </div>
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </main>
     <br><br>
-    <!-- Container หลัก -->
-    <article class="container">
+    <article class="search-section">
+        <div class="search-container">
+            <section class="search-area">
+                <!-- Header -->
+                <div class="search-area-header">
+                    <h4>ฉันกำลังมองหา 🔍</h4>
+                </div>
+                <div class="search-area-container">
+                    <!--  -->
+                    <select id="province">
+                        <option value="">--- เลือกหมวดหมู่ ---</option>
+                        <option value="ทะเล">ทะเล</option>
+                        <option value="ภูเขา">ภูเขา</option>
+                        <option value="น้ำตก">น้ำตก</option>
+                    </select>
 
-        <!-- Sidebar (ซ้าย) -->
-        <aside class="sidebar">
-            <div class="box">
+                    <!-- Province -->
+                    <select id="province">
+                        <option value="">--- เลือกจังหวัด/ภูมิภาค ---</option>
+                        <option value="ยะลา">ยะลา</option>
+                        <option value="ปัตตานี">ปัตตานี</option>
+                        <option value="นราธิวาส">นราธิวาส</option>
+                    </select>
 
-                <h3>ข้อมูลทั่วไป</h3>
-                <ul>
-                    <li><a href="#">หน้าหลัก</a></li>
-                    <li><a href="#">ประวัติโรงเรียน</a></li>
-                    <li><a href="#">อักษรย่อ/ตราประจำโรงเรียน</a></li>
-                    <li><a href="#">วิสัยทัศน์</a></li>
-                    <li><a href="#">พันธกิจ</a></li>
-                    <li><a href="#">อัตลักษณ์/เอกลักษณ์</a></li>
-                    <li><a href="#">ที่ตั้ง/แผนผังของโรงเรียน</a></li>
-                    <li><a href="#">โครงสร้างการบริหาร</a></li>
-                </ul>
-            </div>
+                    <!--  -->
+                    <select id="province">
+                        <option value="">--- ช่วงเวลาที่เหมาะสมในการเที่ยว ---</option>
+                        <option value="ฤดูฝน">ฤดูฝน</option>
+                        <option value="ฤดูร้อน">ฤดูร้อน</option>
+                    </select>
 
-
-            <h3>บุคลากร</h3>
-            <ul>
-                <li><a href="#">หน้าหลัก</a></li>
-                <li><a href="#">กลุ่มบริหาร</a></li>
-                <li><a href="#">กลุ่มสาระการเรียนรู้ภาษาไทย</a></li>
-                <li><a href="#">กลุ่มสาระการเรียนรู้คณิตศาสตร์</a></li>
-                <li><a href="#">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</a></li>
-                <li><a href="#">กล่มุสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</a></li>
-                <li><a href="#">กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ</a></li>
-                <li><a href="#">ครูแนะแนว</a></li>
-                <li><a href="#">ฝ่ายดูแลนักเรียน/ปกครอง</a></li>
-                <li><a href="#">ครูประจำชั้้น</a></li>
-            </ul>
-
-            <h2>เมนูหลัก</h2>
-            <ul>
-
-                <li><a href="#">บุคลากร</a></li>
-                <li><a href="#">E-SERVICE</a></li>
-                <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
-                <li><a href="#">ติดต่อโรงเรียน</a></li>
-            </ul>
-        </aside>
-
-
-
-        <!-- เนื้อหาหลัก (กลาง) -->
-        <main class="content">
-            <h1>ข่าวสารและกิจกรรม</h1>
-            <input type="text" id="search" placeholder="ค้นหากิจกรรม..." onkeyup="filterNews()">
-            <div class="news-container">
-                <h4>ศูนย์ทดสอบมาตรฐานฝีมือแรงงาน ม.พะเยา จัดการทดสอบมาตรฐานฝีมือแรงงานแห่งชาติ
-                    สาขาช่างเทคนิคเครื่องกัดอัตโนมัติ ระดับ 1 รุ่นที่ 1 และ 2</h4>
-                <img src="/img/2.jpg" alt="News" width="650">
-            </div>
-
-            <table id="newsTable">
-                <tr>
-                    <th>ภาพข่าว</th>
-                    <th>หัวข้อข่าว</th>
-                </tr>
-                <tr>
-                    <td><img src="img/1.jpg" alt="ข่าว 1"></td>
-                    <td><a href="#">ศูนย์ทดสอบมาตรฐานฝีมือแรงงาน</a></td>
-                </tr>
-                <tr>
-                    <td><img src="img/2.jpg" alt="ข่าว 2"></td>
-                    <td><a href="#">พิธีพระราชทานปริญญาบัตร</a></td>
-                </tr>
-            </table>
-        </main>
-
-        <!-- รายละเอียดเพิ่มเติม (ขวา) -->
-        <aside class="extra-info">
-
-            <article class="box">
-                <h4>ผู้บริหาร</h4> <br>
-                <section class="cards">
-                    <div class="card">
-                        <img src="/img/1.png" alt="Licensee">
-                        <p>นายฮาริส มะแซ</p>
-                        <p>ผู้รับใบอนุญาติ</p>
+                    <!-- Submit button -->
+                    <div class="search-area-button">
+                        <button onclick="searchServices()">ค้นหา</button>
                     </div>
+            </section>
 
-                    <br>
-                    <div class="card">
-                        <img src="/img/1.png" alt="Director">
-                        <p>นายกอเซม มะแซ</p>
-                        <p>ผู้อำนวยการโรงเรียน</p>
-                    </div>
-
-                </section>
-            </article>
-        </aside>
+            <div id="results" class="results">
+                <h4>ผลลัพธ์การค้นหา:</h4>
+                <ul id="resultsList"></ul>
+            </div>
+        </div>
 
     </article>
 
-    <br><br>
+    <section>
+        <strong style="padding: 50px;; color: #4c4848;">Services | บริการต่างๆ</strong>
+    </section>
+
+    <article class="cards">
+        <section class="card">
+            <a href="../../pages/pet_care00.html">
+                <img src="../../img/pet-4.png" alt="Dog Bath" style="width: 80%; border-radius: 10px;">
+                <p>บริการกรูมมิ่ง</p>
+            </a>
+        </section>
+        <section class="card">
+            <a href="../../pages/pet_care02.html">
+                <img src="../../img/pet-3.png" alt="Pet Travel" style="width: 100%; border-radius: 10px;">
+                <p>บริการฝากเลี้ยง - ดูแลตามบ้าน</p>
+            </a>
+        </section>
+
+        <section class="card">
+            <a href="../../pages/grab_pet.html">
+                <img src="../../img/pet-1.png" alt="Pet Travel" style="width: 100%; border-radius: 10px;">
+                <p>บริการรับ-ส่งสัตว์เลี้ยง</p>
+            </a>
+        </section>
+    </article>
+
+    <br><br><br>
 
     <footer>
         <article class="footer-container">
