@@ -1,166 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+# 🌏 Southern Wonders @ Pattani - Yala - Narathiwat
+โปรเจครายวิชา *Data Structure* <br>
+สาขา *วิศวกรรมซอฟต์แวร์ มหาวิทยาลัยพะเยา* ปีการศึกษา 2567
 
-<head>
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+The project for *Data Structure*,<br>
+Software Engineering Department, University of Phayao, Academic Year 2024.
 
-    <!-- Logo -->
-    <link rel="icon" href="/img/logo.jpg" type="image/png" sizes="16x16">
+---
 
-    <!-- Title -->
-    <title>Muslim Pattanasart School</title>
+## 📌 Project Overview (ภาพรวมของโปรเจค)
+**Southern Wonders** เป็นเว็บไซต์ที่รวบรวมข้อมูลการท่องเที่ยวในสามจังหวัดชายแดนภาคใต้ ได้แก่ *ปัตตานี (Pattani), ยะลา (Yala) และนราธิวาส (Narathiwat)* โดยเน้นไปที่สถานที่ท่องเที่ยวธรรมชาติ วัฒนธรรม และประวัติศาสตร์ที่มีเอกลักษณ์ พร้อมทั้งแนะนำกิจกรรมที่น่าสนใจ ร้านอาหารท้องถิ่น และเคล็ดลับการเดินทาง 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../../assets/css/globals.css">
-    <link rel="stylesheet" href="../../assets/css/navbar.css">
-    <link rel="stylesheet" href="../../assets/css/header.css">
-    <link rel="stylesheet" href="../../assets/css/header-nav.css">
-    <link rel="stylesheet" href="../../assets/css/banner.css">
-    <link rel="stylesheet" href="../../assets/css/content.css">
-    <link rel="stylesheet" href="../../assets/css/extra-info.css">
-    <link rel="stylesheet" href="../../assets/css/sidebar.css">
-    <link rel="stylesheet" href="../../assets/css/footer.css">
-    <link rel="stylesheet" href="../../assets/css/g.css">
+**Southern Wonders** is a travel information website focusing on the three southernmost provinces of Thailand: *Pattani, Yala, and Narathiwat*. It highlights unique natural, cultural, and historical attractions, along with exciting activities, local restaurants, and travel tips.
 
-    <!--JavaScript -->
-    <script defer src="/js/scrollto_top.js"></script>
-    <script defer src="/js/filterNews.js"></script>
-    <script defer src="/js/moveSlide.js"></script>
+---
 
-</head>
+## ✨ Key Features (ฟีเจอร์หลัก)
+| Feature | Status |
+|----------|---------|
+| รายชื่อสถานที่ท่องเที่ยวแนะนำ | ✅ เสร็จสมบูรณ์ |
+| ข้อมูลเชิงลึกเกี่ยวกับวัฒนธรรมและประวัติศาสตร์ | ✅ เสร็จสมบูรณ์ |
+| แนะนำกิจกรรมการท่องเที่ยว | ✅ เสร็จสมบูรณ์ |
+| ระบบแผนที่แสดงสถานที่ | ✅ เสร็จสมบูรณ์ |
+| รีวิวร้านอาหารและที่พัก | ⏳ กำลังพัฒนา |
+| ระบบค้นหาและกรองสถานที่ | ⏳ กำลังพัฒนา |
 
-<body>
-    <!-- Header -->
-    <header class="bottom-header">
-        <p> @ Muslim Pattanasart School &nbsp; | &nbsp;المعهد الاسلامي النموجي </p>
-    </header>
+---
 
-    <!-- Navbar -->
-    <nav>
-        <section class="logo-container">
-            <img src="../../img/logo.jpg" alt="BuddyNest Logo" class="logo" onclick="goHome()">
-            <div class="school-name">โรงเรียนมุสลิมพัฒนศาสตร์</div>
-        </section>
+## 🛠️ Tech Stack (เทคโนโลยีที่ใช้)
+- **Frontend:** HTML, CSS, JavaScript (Vanilla)
+- **Map Integration:** Leaflet.js, Google Maps API
+- **Deployment:** Vercel
 
-        <article class="auth-buttons">
-            <a href="../../index.html">หน้าหลัก</a>
-            <section class="dropdown">
-                <a href="#">ข้อมูลทั่วไป</a>
-                <div class="dropdown-menu">
-                    <a href="#">ประวัติโรงเรียน</a>
-                    <a href="#">อักษรย่อ/ตราประจำโรงเรียน</a>
-                    <a href="#">วิสัยทัศน์</a>
-                    <a href="#">พันธกิจ</a>
-                    <a href="#">อัตลักษณ์/เอกลักษณ์</a>
-                    <a href="#">ที่ตั้ง/แผนผังของโรงเรียน</a>
-                    <a href="#">โครงสร้างการบริหาร</a>
-                </div>
-            </section>
+---
 
-            <section class="dropdown">
-                <a href="#">บุคลากร</a>
-                <div class="dropdown-menu">
-                    <a href="#">กลุ่มบริหาร</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้ภาษาไทย</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้คณิตศาสตร์</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</a>
-                    <a href="#">กล่มุสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</a>
-                    <a href="#">กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ</a>
-                    <a href="#">แนะแนว</a>
-                    <a href="#">ปกครอง</a>
-                    <a href="#">ครูประจำชั้้น</a>
-                </div>
-            </section>
+## 👨‍💻 Development Team (ทีมพัฒนา)
+| ชื่อ | ตำแหน่ง |
+|------|----------|
+| นายอามาน อาลีแก | UI/UX Designer - Frontend Developer |
 
-            <section class="dropdown">
-                <a href="#">E-SERVICE</a>
-                <div class="dropdown-menu">
-                    <a href="#">ตรวจสอบผลการเรียน</a>
-                    <a href="#">การเรียนการสอนออนไลน์</a>
-                </div>
-            </section>
 
-            <section class="dropdown">
-                <a href="#">กิจกรรมนักเรียน</a>
-                <div class="dropdown-menu">
-                    <a href="#">#</a>
-                    <a href="#">#</a>
-                </div>
-            </section>
+---
 
-            <a href="#">ข่าวประชาสัมพันธ์</a>
-            <a href="#">ติดต่อโรงเรียน</a>
-
-        </article>
-    </nav>
-    <br><br>
-    <section class="news">
-        <h2>ข่าวประชาสัมพันธ์</h2>
-        <div class="news-item">
-            <h3>ประกาศผลการเรียน 2/2567</h3>
-            <p>สามารถตรวจสอบผลการเรียนได้ที่เว็บไซต์ของโรงเรียน</p>
-            <a href="#">อ่านเพิ่มเติม</a>
-        </div>
-        <div class="news-item">
-            <h3>กิจกรรม 120 ปี โรงเรียนพัทลุง</h3>
-            <p>ร่วมเฉลิมฉลองครบรอบ 120 ปีแห่งความภาคภูมิใจ</p>
-            <a href="#">อ่านเพิ่มเติม</a>
-        </div>
-    </section>
-
-    <br><br>
-
-    <footer>
-        <article class="footer-container">
-
-            <!-- About -->
-            <section class="footer-section">
-                <h3>เมนูหลัก</h3>
-                <p><a href="#">หน้าหลัก</a></p>
-                <p><a href="#">ข้อมูลทั่วไป</a></p>
-                <p><a href="#">บุคลากร</a></p>
-                <p><a href="#">E-SERVICE</a></p>
-                <p><a href="#">กิจกรรมนักเรียน</a></p>
-                <p><a href="#">ข่าวประชาสัมพันธ์</a></p>
-            </section>
-
-            <!-- Follow us-->
-            <section class="footer-section">
-                <h3>ติดตามเราได้ที่</h3>
-                <div class="fb-page">
-                    <iframe src="https://web.facebook.com/profile.php?id=100064592836397" width="340" height="130"
-                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true">
-                    </iframe>
-                </div>
-            </section>
-
-            <!-- Contact -->
-            <section class="footer-section">
-                <h3>ติดต่อเรา</h3>
-                <p>100/1 ม.3 ต.บางปู อ.ยะหริ่ง จ.ปัตตานี 94150</p>
-                <p>โทรศัพท์: 0-2949-4278, 0-2949-4312-3</p>
-                <p>โทรสาร: 0-2949-4220</p>
-                <p>เว็บไซต์: <a href="https://www.namuzaji.com">www.namuzaji.com</a></p>
-                <p>Email: mpsbangpoo@hotmail.com</p>
-            </section>
-
-        </article>
-        <footer class="bottom-footer">
-            <p>© 2025 Muslim Pattanasart School. All Rights Reserved.</p>
-        </footer>
-
-        <!-- ปุ่มเลื่อนขึ้นบนสุด -->
-        <button class="scroll-top" onclick="scrollToTop()">↑</button>
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            console.log("เว็บไซต์โหลดเรียบร้อย!");
-        });
-    </script>
-
-</body>
-
-</html>
+> **Southern Wonders @ Pattani - Yala - Narathiwat** - สัมผัสเสน่ห์แดนใต้ ค้นพบความงามที่ซ่อนเร้น ✨🌿
