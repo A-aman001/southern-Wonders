@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/header-nav.css">
-    <link rel="stylesheet" href="/assets/css/banner.css">
     <link rel="stylesheet" href="/assets/css/content.css">
     <link rel="stylesheet" href="/assets/css/extra-info.css">
     <link rel="stylesheet" href="/assets/css/sidebar.css">
@@ -28,8 +27,18 @@
     <!--JavaScript -->
     <script defer src="/js/scrollto_top.js"></script>
     <script defer src="/js/filterNews.js"></script>
-    <script defer src="/js/moveSlide.js"></script>
     <script defer src="/js/cards.js"></script>
+
+    <style>
+        .search-section {
+            margin-top: 200px;
+            /* ปรับตำแหน่งให้เลื่อนลง */
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 
 </head>
 
@@ -55,19 +64,6 @@
         </article>
     </nav>
 
-    <!-- Banner -->
-    <main class="banner-container">
-        <div class="banner-slide">
-            <img src="/img/Banner1.png" alt="Banner 1">
-            <img src="/img/Banner2.png" alt="Banner 2">
-            <img src="/img/Banner3.png" alt="Banner 3">
-            <img src="/img/Banner4.png" alt="Banner 4">
-            <img src="/img/Banner5.png" alt="Banner 5">
-            <img src="/img/Banner6.png" alt="Banner 6">
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </main>
     <br><br>
     <article class="search-section">
         <div class="search-container">
@@ -80,9 +76,9 @@
                     <!--  -->
                     <select id="province">
                         <option value="">--- เลือกหมวดหมู่ ---</option>
-                        <option value="ทะเล">สถานที่ท่องเที่ยวธรรมชาติ</option>
-                        <option value="สถานที่ท่องเที่ยวเชิงวัฒนธรรม & ศาสนา">สถานที่ท่องเที่ยวเชิงวัฒนธรรม & ศาสนา</option>
-                        <option value="อาหารท้องถิ่นที่ต้องลอง">อาหารท้องถิ่นที่ต้องลอง</option>
+                        <option value="ทะเล">ทะเล</option>
+                        <option value="ภูเขา">ภูเขา</option>
+                        <option value="น้ำตก">น้ำตก</option>
                     </select>
 
                     <!-- Province -->
@@ -111,27 +107,64 @@
     </article>
 
     <section>
-        <strong style="padding: 50px;; color: #4c4848;">Top Attractions | สถานที่ท่องเที่ยวแนะนำ</strong>
+        <strong style="padding: 50px;; color: #4c4848;">Must-Try Local Foods | อาหารท้องถิ่นที่ต้องลอง</strong>
     </section>
 
     <article class="cards">
         <section class="card">
-            <a href="../../pages/natural-attractions.html">
-                <img src="../../img/travel1.jpg" alt="Dog Bath" style="width: 80%; border-radius: 10px;">
+            <a href="#">
+                <img src="/img/travel1.jpg" alt="Dog Bath" style="width: 80%; border-radius: 10px;">
                 <p>สถานที่ท่องเที่ยวธรรมชาติ</p>
             </a>
         </section>
-
         <section class="card">
-            <a href="../../pages/cultural-religious-attractions.html">
+            <a href=".#">
                 <img src="/img/travel2.jpg" alt="Pet Travel" style="width: 80%; border-radius: 10px;">
                 <p>สถานที่ท่องเที่ยวเชิงวัฒนธรรม & ศาสนา</p>
             </a>
         </section>
 
         <section class="card">
-            <a href="../../pages/must-try-local-foods.html">
-                <img src="../../img/travel3.jpg" alt="Pet Travel" style="width: 100%; border-radius: 10px;">
+            <a href="#">
+                <img src="/img/travel3.jpg" alt="Pet Travel" style="width: 100%; border-radius: 10px;">
+                <p>อาหารท้องถิ่นที่ต้องลอง</p>
+            </a>
+        </section>
+        <section class="card">
+            <a href="#">
+                <img src="/img/travel1.jpg" alt="Dog Bath" style="width: 80%; border-radius: 10px;">
+                <p>สถานที่ท่องเที่ยวธรรมชาติ</p>
+            </a>
+        </section>
+        <section class="card">
+            <a href=".#">
+                <img src="/img/travel2.jpg" alt="Pet Travel" style="width: 80%; border-radius: 10px;">
+                <p>สถานที่ท่องเที่ยวเชิงวัฒนธรรม & ศาสนา</p>
+            </a>
+        </section>
+
+        <section class="card">
+            <a href="#">
+                <img src="/img/travel3.jpg" alt="Pet Travel" style="width: 100%; border-radius: 10px;">
+                <p>อาหารท้องถิ่นที่ต้องลอง</p>
+            </a>
+        </section>
+        <section class="card">
+            <a href="#">
+                <img src="/img/travel1.jpg" alt="Dog Bath" style="width: 80%; border-radius: 10px;">
+                <p>สถานที่ท่องเที่ยวธรรมชาติ</p>
+            </a>
+        </section>
+        <section class="card">
+            <a href=".#">
+                <img src="/img/travel2.jpg" alt="Pet Travel" style="width: 80%; border-radius: 10px;">
+                <p>สถานที่ท่องเที่ยวเชิงวัฒนธรรม & ศาสนา</p>
+            </a>
+        </section>
+
+        <section class="card">
+            <a href="#">
+                <img src="/img/travel3.jpg" alt="Pet Travel" style="width: 100%; border-radius: 10px;">
                 <p>อาหารท้องถิ่นที่ต้องลอง</p>
             </a>
         </section>
@@ -166,7 +199,7 @@
                 <p><a href="../../index.html">หน้าหลัก</a></p>
                 <p><a href="../../pages/natural-attractions.html">สถานที่ท่องเที่ยวธรรมชาติ</a></p>
                 <p><a href="../../pages/cultural-religious-attractions.html">สถานที่ท่องเที่ยวเชิงวัฒนธรรม & ศาสนา</a></p>
-                <p><a href="../pages/must-try-local-foods.html">อาหารท้องถิ่นที่ต้องลอง</a></p>
+                <p><a href="../../pages/must-try-local-foods.html">อาหารท้องถิ่นที่ต้องลอง</a></p>
             </section>
 
             <!-- ปุ่มเลื่อนขึ้นบนสุด -->
